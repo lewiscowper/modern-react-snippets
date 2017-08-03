@@ -36,7 +36,8 @@
   reactClassCompomentPropTypes:
   	prefix: "rccp"
   	body: '''
-  		import React, {Component, PropTypes} from 'react';
+  		import React, { Component } from 'react';
+      import PropTypes from 'prop-types';
 
   		class ${1:componentName} extends Component {
   			render() {
@@ -59,7 +60,8 @@
   reactClassCompomentWithMethods:
   	prefix: "rcfc"
   	body: '''
-  		import React, {Component, PropTypes} from 'react';
+  		import React, { Component } from 'react';
+      import PropTypes from 'prop-types';
 
   		class ${1:componentName} extends Component {
   			constructor(props) {
@@ -132,7 +134,8 @@
   reactStatelessProps:
   	prefix: "rscp"
   	body: '''
-  		import React, {PropTypes} from 'react';
+  		import React from 'react';
+      import PropTypes from 'prop-types';
 
   		const ${1:componentName} = props => {
   			return (
